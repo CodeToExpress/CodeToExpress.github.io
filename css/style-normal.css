@@ -1,5 +1,5 @@
 /*
-	Alpha by HTML5 UP
+	Aerial by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -7,21 +7,17 @@
 /* Basic */
 
 	body, input, select, textarea {
-		font-size: 11pt;
+		font-size: 12pt;
 	}
 
-/* Header */
+/* BG */
+	@-moz-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-750px,0,0); -webkit-transform: translate3d(-750px,0,0); -o-transform: translate3d(-750px,0,0); -ms-transform: translate3d(-750px,0,0); transform: translate3d(-750px,0,0); } }
+	@-webkit-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-750px,0,0); -webkit-transform: translate3d(-750px,0,0); -o-transform: translate3d(-750px,0,0); -ms-transform: translate3d(-750px,0,0); transform: translate3d(-750px,0,0); } }
+	@-o-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-750px,0,0); -webkit-transform: translate3d(-750px,0,0); -o-transform: translate3d(-750px,0,0); -ms-transform: translate3d(-750px,0,0); transform: translate3d(-750px,0,0); } }
+	@-ms-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-750px,0,0); -webkit-transform: translate3d(-750px,0,0); -o-transform: translate3d(-750px,0,0); -ms-transform: translate3d(-750px,0,0); transform: translate3d(-750px,0,0); } }
+	@keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-750px,0,0); -webkit-transform: translate3d(-750px,0,0); -o-transform: translate3d(-750px,0,0); -ms-transform: translate3d(-750px,0,0); transform: translate3d(-750px,0,0); } }
 
-	.dropotron.level-0 {
-		font-size: 1em;
+	#bg {
+		background-size: 750px auto;
+		width: 2250px;
 	}
-
-/* Banner */
-
-	#banner {
-		background-attachment: scroll;
-	}
-
-		#banner h2 {
-			font-size: 3.5em;
-		}

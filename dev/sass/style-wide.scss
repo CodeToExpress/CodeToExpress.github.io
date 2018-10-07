@@ -1,18 +1,20 @@
+@import 'vars';
+@import 'mixins';
+
 /*
-	Aerial by HTML5 UP
+	Alpha by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-@import 'vars';
-@import 'mixins';
-
 /* Basic */
 
 	body, input, select, textarea {
-		font-size: 12pt;
+		font-size: 13pt;
 	}
 	
-/* BG */
+/* Banner */
 
-	@include bg($bg-width * 0.5);
+	#banner {
+		padding: 10em 0 18em 0;
+	}

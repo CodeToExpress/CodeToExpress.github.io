@@ -7,12 +7,26 @@
 @import 'vars';
 @import 'mixins';
 
-/* Basic */
+/* Wrapper */
 
-	body, input, select, textarea {
-		font-size: 12pt;
+	#wrapper {
+		opacity: 1;
 	}
 	
-/* BG */
+/* Overlay */
 
-	@include bg($bg-width * 0.5);
+	#overlay {
+		opacity: 1;
+	}
+	
+/* Header */
+
+	#header {
+		opacity: 1;
+
+		nav {
+			li {
+				opacity: 1;
+			}
+		}
+	}

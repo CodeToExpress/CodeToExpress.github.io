@@ -1,55 +1,42 @@
-// Duration.
-	$duration-transition:		0.2s;
+//
+//	Aerial by HTML5 UP
+//	html5up.net | @n33co
+//	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+//
 
-// Size.
-	$size-border-radius:		6px;
-	$size-element-height:		3em;
-	$size-element-margin:		2em;
+$bg:						#348cb2 url("images/bg.jpg") bottom left;
+$bg-width:					1500px;
 
-// Font.
-	$font-family:				'Source Sans Pro', sans-serif;
-	$font-family-fixed:			monospace;
-	$font-weight:				300;
-	$font-weight-bold:			400;
+$color-bg:					#fff;
+$color-fg:					#fff;
+$color-nav-icon-hover-bg:	rgba(255,255,255,0.175);
+$color-nav-icon-hover-fg:	#fff;
+$color-nav-icon-active-bg:	rgba(255,255,255,0.35);
+$color-nav-icon-active-fg:	#fff;
 
-// Color.
-	$color-bg:					#f5f5f5;
-	$color-fg:					#777;
-	$color-fg-bold:				#646464;
-	$color-fg-light:			#999;
+$duration-bg:				60s;
+$duration-wrapper:			3s;
+$duration-overlay:			1.5s;
+$duration-header:			1s;
+$duration-nav-icons:		0.5s;
 
-	$color-accent1-bg:			#666;
-	$color-accent1-fg:			mix($color-accent1-bg, #ffffff, 25%);
-	$color-accent1-fg-bold:		#ffffff;
-	$color-accent1-fg-light:	mix($color-accent1-bg, #ffffff, 40%);
+$delay-wrapper:				$duration-wrapper - 1s;
+$delay-overlay:				$delay-wrapper - 0.5s;
+$delay-header:				$delay-overlay + $duration-overlay - 0.75s;
+$delay-nav-icons:			$delay-header + $duration-header - 1s;
+$delay-nav-icon:			0.25s;
 
-	$color-accent2-bg:			#e89980;
-	$color-accent2-fg:			mix($color-accent2-bg, #ffffff, 25%);
-	$color-accent2-fg-bold:		#ffffff;
-	$color-accent2-fg-light:	mix($color-accent2-bg, #ffffff, 40%);
+$size-nav-icon-wrapper:		5.35em;
+$size-nav-icon:				1.75em;
 
-	$color-accent3-bg:			#7fcdb8;
-	$color-accent3-fg:			mix($color-accent3-bg, #ffffff, 25%);
-	$color-accent3-fg-bold:		#ffffff;
-	$color-accent3-fg-light:	mix($color-accent3-bg, #ffffff, 40%);
+@mixin bg($width) {
+	@include vendor-keyframes('bg') {
+		0%		{ @include vendor-property('transform', 'translate3d(0,0,0)'); }
+		100%	{ @include vendor-property('transform', 'translate3d(#{$width * -1},0,0)'); }
+	}
 
-	$color-accent4-bg:			#90b0ba;
-	$color-accent4-fg:			mix($color-accent4-bg, #ffffff, 25%);
-	$color-accent4-fg-bold:		#ffffff;
-	$color-accent4-fg-light:	mix($color-accent4-bg, #ffffff, 40%);
-
-	$color-accent5-bg:			#e5cb95;
-	$color-accent5-fg:			mix($color-accent5-bg, #ffffff, 25%);
-	$color-accent5-fg-bold:		#ffffff;
-	$color-accent5-fg-light:	mix($color-accent5-bg, #ffffff, 40%);
-
-	$color-border:				#e5e5e5;
-	$color-border-bg:			#f8f8f8;
-
-	$color-border2:				#dddddd;
-	$color-border2-bg:			#f0f0f0;
-	
-	$color-header-bg:			#444;
-	$color-header-fg:			#bbb;
-	$color-header-fg-bold:		#fff;
-	$color-header-fg-light:		#999;
+	#bg {
+		background-size: $width auto;
+		width: ($width * 3);
+	}
+}

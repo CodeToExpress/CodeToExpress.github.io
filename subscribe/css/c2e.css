@@ -1,0 +1,146 @@
+body, .container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #D6373D;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+
+}
+
+.innerCircle {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 350px;
+    background: url("./../images/circle.png");
+    border-style: solid;
+    border-width: 10px;
+    border-color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.innerCircle:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.23), 0 6px 24px rgba(0, 0, 0, 0.16);
+}
+
+.alignCenter {
+    margin: 0 auto;
+}
+
+#logo {
+    /* text-align: center; */
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.ip {
+    border: 0;
+    background-color: #fff;
+    padding: 10px;
+    width: 281px;
+    border-radius: 4px;
+    margin-bottom: 10px;  
+    color: #444; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.ip:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.23), 0 6px 24px rgba(0, 0, 0, 0.16);
+}
+
+form {
+    text-align: center;
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#444;
+	/* font-family:Arial; */
+    font-size:17px;
+    font-weight: 500;
+	/* font-weight:bold; */
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+    margin-top: 10px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+    background-color:#f6f6f6;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.23), 0 6px 24px rgba(0, 0, 0, 0.16);
+}
+.myButton:active {
+	position:relative;
+    top:1px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+@media only screen and (max-width: 600px) {
+    .innerCircle {
+        width: 370px;
+        height: 370px;
+        border-radius: 300px;
+    }   
+        
+    #logo {
+        width: 180px;
+    }
+
+    .ip {
+        border: 0;
+        background-color: #fff;
+        padding: 10px;
+        width: 200px;
+        border-radius: 4px;
+        margin-bottom: 10px;  
+        color: #444; 
+    }
+
+    .g-recaptcha {
+        transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;
+        /* margin-left: 60px; */
+        /* margin: 0 auto;display: table;
+        text-align: center; */
+        margin-left: 64px;
+    }
+
+    .myButton {
+        margin-top: 0px;
+    }
+}

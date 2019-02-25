@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>C2E | Subscribe</title>
+    <link rel="shortcut icon" href="./images/c2e.png" />
+    <link rel="icon" href="./images/c2e.png" />
+    <link rel="stylesheet" href="./css/c2e.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="innerCircle">
+            <div class="alignCenter">
+                <div align="center" class="myImg">
+                    <img src="./images/logo.png" id="logo" alt="">
+                </div>
+                
+              
+                <form action="/C2Esubscribe" method="post">
+                    <input class="ip" type="text" name="name" placeholder="Enter Your Name" id="name" /> <br>
+                    <input class="ip" type="email" name="email" placeholder="Enter Your Email" id="email" /> <br>
+                    <div align="center" class="g-recaptcha" data-sitekey="6LeAgZMUAAAAAON3b2Yt-R0gQEpsoqzHVUpfw0Dw" data-callback="recaptchaAuth"></div>
+                    <button id="subsBtn" disabled="disabled" type="submit" class="myButton">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function recaptchaAuth () {
+            var registerBtn = document.getElementById('subsBtn');
+            registerBtn.removeAttribute('disabled');
+        }
+    </script>
+
+</body>
+</html>

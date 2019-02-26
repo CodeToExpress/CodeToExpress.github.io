@@ -113,9 +113,9 @@ form {
 
 @media only screen and (max-width: 600px) {
     .innerCircle {
-        width: 370px;
-        height: 370px;
-        border-radius: 300px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
     }   
         
     #logo {
@@ -126,7 +126,9 @@ form {
         border: 0;
         background-color: #fff;
         padding: 10px;
-        width: 200px;
+        margin-left: 0;
+        width: 82%;
+        /* width: 200px; */
         border-radius: 4px;
         margin-bottom: 10px;  
         color: #444; 
@@ -142,5 +144,50 @@ form {
 
     .myButton {
         margin-top: 0px;
+    }
+
+    #unsubWeb {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .innerCircle {
+        width: 100%;
+        height: 100%;
+        border-radius: 00px;
+    }   
+        
+    #logo {
+        width: 180px;
+        margin-left: -25px;
+    }
+
+    .ip {
+        border: 0;
+        background-color: #fff;
+        padding: 10px;
+        margin-left: -25px;
+        width: 70%;
+        /* width: 200px; */
+        border-radius: 4px;
+        margin-bottom: 10px;  
+        color: #444; 
+    }
+
+    .g-recaptcha {
+        transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;
+        /* margin-left: 60px; */
+        /* margin: 0 auto;display: table;
+        text-align: center; */
+        margin-left: 64px;
+    }
+
+    .myButton {
+        margin-top: 0px;
+    }
+
+    #unsubWeb {
+        display: none;
     }
 }
